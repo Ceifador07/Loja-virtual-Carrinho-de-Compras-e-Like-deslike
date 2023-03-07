@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'opensas';
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'opensas';
+    text-decoration: none;
+
+}
+body{
+    width: 100%;
+    background-color: #fff;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 24px;
+    background-color: rgb(8, 112, 248);
+    display: flex;
+    z-index: 3;
+    
+}
+header .logo{
+    padding: 10px 4px;
+   display: flex;
+}
+.menu{
+    display: none;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.logo a h2{
+    font-size: 26px;
+}
+header form{
+    padding: 10px 0;
+}
+header form input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 450px;
+    height: 40px;
+    border: 1px solid #eee;
+    background-color: #eee;
+    padding: 14px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+header .login{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .login p{
+    color: #fff;
+    margin: 0px 10px;
+}
+header .login a{
+    color: rgb(255, 255, 255);
+    padding: 10px 14px;
+    border-radius: 10px;
+    display: flex;
+    
+}
+header .login a img{
+    height: 25px;
+}
+header .login a:hover{
+    box-shadow: 0px 0px 4px #eee;
+}
+.fechar,
+.menu{
+    border: none;
+    background: none;
+}
+.fechar img,
+.menu img{
+    height: 44px;
+}
+ 
+main{
+    display: flex;
+    width: 100%;
+}
+section{
+    width: 100%;
+}
+main nav{
+    width: 400px;
+    display: block;
+    /* margin: 14px; */
+}
+nav ul{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(8, 132, 248);
+    list-style: none;
+     /* border-radius: 8px; */
+}
+nav ul li{
+    width: 100%;
+    /* border-radius: 8px; */
+    /* margin-top: 4px; */
+}
+nav ul li a{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
+}
+nav ul li a img{
+    height: 20px;
+    margin-right: 4px;
+}
+.ative,
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+/* ==================================== */
+
+#Content{
+    width: 1000px;
+
+}
+#Content .Bem{
+    padding: 10px;
+    font-size: 20px;
+} 
+.detalhes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.detalhes a {
+    box-shadow: 0px 0px 4px #cfcfcf;
+    margin: 10px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.753);
+    height: 170px;
+    width: 280px;
+    border-radius: 8px;
+}
+
+ a .top{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    /* font-size: 24px; */
+    padding: 10px;
+ }
+ a .top .img{
+    margin-right: 10px;
+ }
+ a .top .img img{
+    height: 100px;
+ }
+ .desc{
+    text-align: center;
+    margin-left: 10px;
+ }
+ .desc h4{
+    font-size: 18px;
+ }
+ .desc p{
+    font-size: 28px;
+    margin-top: 18px;
+ }
+ a .bottom{
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+ }
+ 
+ 
+/* Adicionar categoria ======================================= */
+ #menu{
+    width: 100%;
+    height: 40px;
+    /* background-color: rgb(8, 112, 248); */
+    margin: 20px 10px;
+    border-radius: 8px;
+    display: flex;
+ }
+ #menu button{
+    border: none;
+    outline: none;
+    background-color: none;
+    /* width: 80px; */
+    background-color: rgb(8, 112, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 6px; 
+    padding: 10px;
+    margin-right: 10px;
+ }
+ #menu button a{
+    color: #fff;
+    font-size: 18px;
+ }
+ #menu button a img{
+    height: 40px;
+ }
+  /*  tabela categoria */
+
+#Content table{
+    width: 100%;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    margin: 20px 10px;
+     
+}
+table tr{
+    padding: 10px;
+    /* min-width: 140px; */
+}
+table tr.top{
+    background-color: #2e2e2e;
+    font-weight: 500;
+    height: 44px;
+    color: #fff;
+}
+table tr td.left{
+    background-color: #efefef;
+}
+table tr td{
+    border: 1px solid #eee;
+    text-align: center;
+    height: 34px;
+    font-weight: 400;
+    
+}
+table tr td button{
+    border: none;
+    background: none;
+    outline: none;
+    background-color: #2e2e2e;
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+}
+table tr td a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.col{
+    text-align: center;
+}
+.col img{
+    height: 100px;
+    border-radius: 50px;
+}
+ 
+.resp .Error{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.466);
+    height: 40px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+ }
+ .resp .Sucess{
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.568);
+    height: 40px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid aqua;
+ }
+
+
+/* =======================adicionar categoria =======================*/
+
+ 
+ select{
+    height: 40px;
+    width: 120px;
+    margin: 0px 14px;
+    background: #fff;
+    outline: none;
+    border: none;
+    border:1px solid #a3a3a3;
+    padding: 0 10px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+/*    Pedidos personalisados */
+.nome{
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+.nome a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.nome .pedido{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    justify-content: center;
+    align-items: center;
+}
+.nome .pedido .top{
+    font-weight: 600;
+    
+}
+.nome .pedido p{
+     min-width: 25%;
+     padding: 4px;
+     text-align: center;
+     /* background-color: rebeccapurple; */
+}
+ 
+.nome a .pedido{
+    background-color: rgb(168, 168, 168);   
+    color: #fff;
+}
+.nome .pedido button,
+.nome a .pedido button{
+    border: none;
+    background: none;
+    padding: 4px;
+    box-shadow: 0px 0px 4px #eee;
+    background-color: rgba(255, 0, 0, 0.664);
+    border-radius: 4px;
+    color: #fff;
+}
+
+@media  screen and (min-width: 0px) and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 4px rgb(182, 179, 179);
+        background-color: red;
+        /* position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; */
+    }
+    header .logo{
+        padding: 5px 0px;
+    }
+    .logo a h2{
+        font-size: 20px;
+    }
+    .menu{
+        display: flex;
+    }
+    .fechar{
+        display: none;
+    }
+    header form{
+        
+        display: none;
+    }
+    header .login{
+        padding: 0;
+    }
+    header .login p{
+        /* margin-top: -10px; */
+    }
+    header .login a{
+        padding: 10px;
+    }
+    header .login a img{
+        height: 20px;
+    }
+    main{
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    section{
+        width: 100%;
+    }
+    main nav{
+        position: absolute;
+        display: block;
+        width: 100%;
+        left: -100%;
+        display: block;
+    }
+    #Content{
+        width: 100%;
+    }
+    .detalhes{
+        width: 100%;
+        display: flex;
+        
+    }
+    .detalhes a {
+        box-shadow: 0px 0px 4px #cfcfcf;
+        margin: 10px;
+    }
+
+
+    /* ===============tabela=============== */
+    #menu{
+        margin: 20px 0px;
+        padding: 0px 10px;
+    }
+    #Content table{
+        margin: 20px 0px;
+    }
+    table tr.top{
+        color: #fff;
+        text-transform: capitalize;
+    }
+    .nome .pedido p{
+        min-width: 33%;
+        padding: 4px;
+        text-align: center;
+        /* background-color: rebeccapurple; */
+   }
+
+}

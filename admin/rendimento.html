@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../public/css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#"><h2>Ferragem Macoda</h2></a>
+            </div>
+            <form action="">
+                <input type="text" name="buscar" id="" placeholder="Pesquisa os produtos que precisas">
+            </form>
+            <div class="login">
+                <p>Bem vindo Chester</p>
+                <a href="php/sair.php"><img src="../public/images/sair.png" alt=""></a>
+            </div>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="../public/images/home.png" alt=""> Dashboard</a></li>
+                    <li><a href="categorias.html"><img src="../public/images/categoria.png" alt="">Cadastrar Categorias</a></li>
+                    <li><a href="#"><img src="../public/images/add.png" alt="">Cadastrar Produto</a></li>
+                    <li class="ative"><a href="#"><img src="../public/images/money.png" alt="">Rendimento Em caixa</a></li>
+                    <li><a href="#"><img src="../public/images/clientes.png" alt="">Clientes Cadastrados</a></li>
+                    <li><a href="#"><img src="../public/images/add.png" alt="">Notificações do Sistema</a></li>
+                    <li><a href="perfil.php"><img src="../public/images/user.png" alt="">Perfil</a></li>
+                </ul>
+            </nav>
+            <section>
+                <article id="Content">
+                    <div id="menu">
+                        <button><a href="#">Entrada</a></button>
+                        <button><a href="#">Saida</a></button>
+                    </div>
+                    <table>
+                        <tr class="top">
+                            <td>id</td>
+                            <td>Nome </td>
+                            <td>Data</td>
+                            <td colspan="2">Action</td> 
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Cimento</td>
+                            <td>Para construcao de casas</td>
+                            <td><button>active</button></td>
+                            <td><button><a href="Area academica/estudantes/EstudanteDetalhe.php?id=">Detalhes</a></button></td>
+                        </tr>
+                       
+                     </table>  
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

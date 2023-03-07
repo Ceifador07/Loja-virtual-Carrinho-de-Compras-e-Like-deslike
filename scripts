@@ -1,0 +1,27 @@
+    <!-- script para capa -->
+    public function imagesCapa($id){
+            $cmd = $this->pdo->prepare("SELECT imagens from images where fk_produtos = :n LIMIT 1");
+            $cmd->bindValue(":n", $id);
+            $cmd->execute();
+            $dados = $cmd->fetchAll(PDO::FETCH_ASSOC);
+            return $dados;
+        }
+
+        <!-- script para detalhes -->
+
+        public function datelhes($id){
+            $cmd = $this->pdo->prepare("SELECT * from produtos where id = :n");
+            $cmd->bindValue(":n", $id);
+            $cmd->execute();
+            $dados = $cmd->fetchAll(PDO::FETCH_ASSOC);
+            return $dados;
+    }
+
+    <!-- script para para todas imagens -->
+    public function imagesDetalhes($id){
+        $cmd = $this->pdo->prepare("SELECT * from images where fk_produtos = :n");
+        $cmd->bindValue(":n", $id);
+        $cmd->execute();
+        $dados = $cmd->fetchAll(PDO::FETCH_ASSOC);
+        return $dados;
+     }

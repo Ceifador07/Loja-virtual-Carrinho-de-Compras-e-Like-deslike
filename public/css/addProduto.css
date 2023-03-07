@@ -1,0 +1,110 @@
+
+#addProduto{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px ;
+}
+#addProduto .col{
+   margin: 10px;
+}
+#addProduto .col label{
+   display: block;
+   font-size: 20px;  
+   text-align: left;
+}
+#addProduto .col input{
+   height: 40px;
+   width: 440px;
+   margin: 10px 0;
+   background: none;
+   outline: none;
+   border: none;
+   color: rgb(0, 0, 0);
+   padding: 0 10px;
+   border-radius: 4px;
+}
+#addProduto .col input[type='text']{
+   font-size: 17px;
+   background:  #fff;
+   border:1px solid #a3a3a3;
+}
+#addProduto .col textarea{
+    height: 140px;
+    width: 440px;
+    margin: 10px 0;
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 17px;
+    background:  #fff;
+    border:1px solid #a3a3a3;
+}
+
+#addProduto .col select{
+    height: 44px;
+    width: 440px;
+    margin: 10px 0;
+    background: #fff;
+    outline: none;
+    border: none;
+    border:1px solid #a3a3a3;
+    padding: 0 10px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+#addProduto .col input[type='submit']{
+    background-color: rgb(8, 112, 248);  
+    border-radius: 4px;  
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+#addProduto .col input[type='date']{
+    font-size: 17px;
+    background:  #fff;
+    border:1px solid #a3a3a3;
+}
+#addProduto .col input[type='password']{
+    font-size: 17px;
+    background:  #fff;
+    border:1px solid #a3a3a3;
+}
+#addProduto .col input[type='file']{
+    font-size: 17px;
+    background:  #fff;
+    border:1px solid #a3a3a3;
+    padding: 10px;
+} 
+#addProduto .col input[type='number']{
+    font-size: 17px;
+    background:  #fff;
+    border:1px solid #a3a3a3;
+}
+.resp .Error{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.466);
+    height: 40px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+ }
+ .resp .Sucess{
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.568);
+    height: 40px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid aqua;
+ }
